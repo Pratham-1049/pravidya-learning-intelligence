@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project architecture
+
+- Keep dashboard data access behind `src/services/` so the frontend can switch from mock data to the planned Express API without coupling request logic to UI components.
